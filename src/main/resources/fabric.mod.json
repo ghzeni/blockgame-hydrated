@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "blockgame-hydrated",
+	"version": "${version}",
+	"name": "Blockgame Hydrated",
+	"description": "This is a mod that manages your inventory to drink water in Blockgame.",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/blockgame-hydrated/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dev.cheddargt.blockgamehydrated.BlockgameHydrated"
+		],
+		"client": [
+			"dev.cheddargt.blockgamehydrated.BlockgameHydratedClient"
+		],
+		"fabric-datagen": [
+			"dev.cheddargt.blockgamehydrated.BlockgameHydratedDataGenerator"
+		]
+	},
+	"mixins": [
+		"blockgame-hydrated.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.20.2",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
