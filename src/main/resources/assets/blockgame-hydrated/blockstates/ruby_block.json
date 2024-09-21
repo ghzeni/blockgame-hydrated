@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "blockgame-hydrated:block/ruby_block"
+    }
+  }
+}
