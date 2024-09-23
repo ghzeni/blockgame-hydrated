@@ -28,7 +28,7 @@ public class BlockgameHydrated implements ModInitializer {
 		ClientTickEvents.END_CLIENT_TICK.register(client -> {
 			if (client.currentScreen instanceof InventoryScreen) {
 				if (GLFW.glfwGetMouseButton(client.getWindow().getHandle(), GLFW.GLFW_MOUSE_BUTTON_3) == GLFW.GLFW_PRESS) {
-					Item item = Registries.ITEM.get(new Identifier("minecraft:potion{Potion:water}"));
+					Item item = Registries.ITEM.get(new Identifier(selectedItem));
 					int itemInInventory = findItemInInventory(client, item, 9, 36);
 					if (itemInInventory != -1) {
 						int emptyHotbarSlot = findDedicatedHotbarSlot(client);
